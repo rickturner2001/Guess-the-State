@@ -20,8 +20,6 @@ const Home: NextPage = () => {
 
   const [previousGuess, setPreviousGuess] = useState(GuessState.INITIAL);
 
-  useEffect(() => {}, [guesses]);
-
   const parseNewInput = () => {
     const guessCheck = allStates.filter(
       (statesData) =>

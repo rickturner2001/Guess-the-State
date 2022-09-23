@@ -3,7 +3,9 @@ import { createContext, useContext, useState } from "react";
 export type StateInfo = { id: string; val: string; name: string };
 type updatingFunc = (guess: string) => void;
 
-function tempUpdate(guess: string) {}
+function tempUpdate(guess: string) {
+  return;
+}
 
 export const useGuesses = () => {
   return useContext(GuessesContext);
