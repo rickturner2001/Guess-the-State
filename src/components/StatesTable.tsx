@@ -1,14 +1,13 @@
 import allStates from "../data/allStates.json";
 
 const StatesTable = ({ guesses }: { guesses: string[] }) => {
-  console.log(guesses);
   return (
     <div className="flex flex-col gap-6">
       <h1 className="text-center text-2xl">
         Current Score: {guesses.length}/{allStates.length}
       </h1>
-      <div className="overflow-x-auto relative scrollbar scrollbar-thumb-gray-200 scrollbar-track-gray-100 shadow-md w-full">
-        <table className="w-[25rem] text-sm text-left text-gray-500 dark:text-gray-400">
+      <div className="overflow-x-auto relative scrollbar scrollbar-thumb-gray-200 scrollbar-track-gray-100  w-full">
+        <table className="max-w-md  md:w-[40rem] mx-auto  text-sm text-left text-gray-500 dark:text-gray-400">
           <thead className="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
             <tr>
               <th scope="col" className="py-3 px-6">

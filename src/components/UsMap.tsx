@@ -26,6 +26,9 @@ const offsets = {
 };
 
 const UsMap = () => {
+  const getStateByID = (id: string) => {
+    return allStates.filter((state) => state.val === id)[0];
+  };
   const guesses = useGuesses();
   const guessesUpdate = useGuessesUpdate();
 
@@ -42,7 +45,13 @@ const UsMap = () => {
                 fill="#DDD"
                 style={{
                   default: {
-                    fill: `${guesses.includes(geo.id) ? "#89cff0" : "#D6D6DA"}`,
+                    fill: `${
+                      guesses.includes(geo.id)
+                        ? getStateByID(geo.id)?.majority === "blue"
+                          ? "#89cff0"
+                          : "#ff4122"
+                        : "#D6D6DA"
+                    }`,
                     outline: "none",
                   },
                   hover: {

@@ -1,52 +1,352 @@
 [
-  { "id": "AL", "name": "Alabama", "val": "01" },
-  { "id": "AK", "name": "Alaska", "val": "02" },
-  { "id": "AZ", "name": "Arizona", "val": "04" },
-  { "id": "AR", "name": "Arkansas", "val": "05" },
-  { "id": "CA", "name": "California", "val": "06" },
-  { "id": "CO", "name": "Colorado", "val": "08" },
-  { "id": "CT", "name": "Connecticut", "val": "09" },
-  { "id": "DE", "name": "Delaware", "val": "10" },
-  { "id": "FL", "name": "Florida", "val": "12" },
-  { "id": "GA", "name": "Georgia", "val": "13" },
-  { "id": "HI", "name": "Hawaii", "val": "15" },
-  { "id": "ID", "name": "Idaho", "val": "16" },
-  { "id": "IL", "name": "Illinois", "val": "17" },
-  { "id": "IN", "name": "Indiana", "val": "18" },
-  { "id": "IA", "name": "Iowa", "val": "19" },
-  { "id": "KS", "name": "Kansas", "val": "20" },
-  { "id": "KY", "name": "Kentucky", "val": "21" },
-  { "id": "LA", "name": "Louisiana", "val": "22" },
-  { "id": "ME", "name": "Maine", "val": "23" },
-  { "id": "MD", "name": "Maryland", "val": "24" },
-  { "id": "MA", "name": "Massachusetts", "val": "25" },
-  { "id": "MI", "name": "Michigan", "val": "26" },
-  { "id": "MN", "name": "Minnesota", "val": "27" },
-  { "id": "MS", "name": "Mississippi", "val": "28" },
-  { "id": "MO", "name": "Missouri", "val": "29" },
-  { "id": "MT", "name": "Montana", "val": "30" },
-  { "id": "NE", "name": "Nebraska", "val": "31" },
-  { "id": "NV", "name": "Nevada", "val": "32" },
-  { "id": "NH", "name": "New Hampshire", "val": "33" },
-  { "id": "NJ", "name": "New Jersey", "val": "34" },
-  { "id": "NM", "name": "New Mexico", "val": "35" },
-  { "id": "NY", "name": "New York", "val": "36" },
-  { "id": "NC", "name": "North Carolina", "val": "37" },
-  { "id": "ND", "name": "North Dakota", "val": "38" },
-  { "id": "OH", "name": "Ohio", "val": "39" },
-  { "id": "OK", "name": "Oklahoma", "val": "40" },
-  { "id": "OR", "name": "Oregon", "val": "41" },
-  { "id": "PA", "name": "Pennsylvania", "val": "42" },
-  { "id": "RI", "name": "Rhode Island", "val": "44" },
-  { "id": "SC", "name": "South Carolina", "val": "45" },
-  { "id": "SD", "name": "South Dakota", "val": "46" },
-  { "id": "TN", "name": "Tennessee", "val": "47" },
-  { "id": "TX", "name": "Texas", "val": "48" },
-  { "id": "UT", "name": "Utah", "val": "49" },
-  { "id": "VT", "name": "Vermont", "val": "50" },
-  { "id": "VA", "name": "Virginia", "val": "51" },
-  { "id": "WA", "name": "Washington", "val": "53" },
-  { "id": "WV", "name": "West Virginia", "val": "54" },
-  { "id": "WI", "name": "Wisconsin", "val": "55" },
-  { "id": "WY", "name": "Wyoming", "val": "56" }
+  {
+    "id": "AL",
+    "name": "Alabama",
+    "val": "01",
+    "majority": "red",
+    "capital": "Montgomery"
+  },
+  {
+    "id": "AK",
+    "name": "Alaska",
+    "val": "02",
+    "majority": "red",
+    "capital": "Juneau"
+  },
+  {
+    "id": "AZ",
+    "name": "Arizona",
+    "val": "04",
+    "majority": "blue",
+    "capital": "Phoenix"
+  },
+  {
+    "id": "AR",
+    "name": "Arkansas",
+    "val": "05",
+    "majority": "red",
+    "capital": "Little Rock"
+  },
+  {
+    "id": "CA",
+    "name": "California",
+    "val": "06",
+    "majority": "blue",
+    "capital": "Sacramento"
+  },
+  {
+    "id": "CO",
+    "name": "Colorado",
+    "val": "08",
+    "majority": "blue",
+    "capital": "Denver"
+  },
+  {
+    "id": "CT",
+    "name": "Connecticut",
+    "val": "09",
+    "majority": "blue",
+    "capital": "Hartford"
+  },
+  {
+    "id": "DE",
+    "name": "Delaware",
+    "val": "10",
+    "majority": "blue",
+    "capital": "Dover"
+  },
+  {
+    "id": "FL",
+    "name": "Florida",
+    "val": "12",
+    "majority": "red",
+    "capital": "Tallahassee"
+  },
+  {
+    "id": "GA",
+    "name": "Georgia",
+    "val": "13",
+    "majority": "blue",
+    "capital": "Atlanta"
+  },
+  {
+    "id": "HI",
+    "name": "Hawaii",
+    "val": "15",
+    "majority": "blue",
+    "capital": "Honolulu"
+  },
+  {
+    "id": "ID",
+    "name": "Idaho",
+    "val": "16",
+    "majority": "red",
+    "capital": "Boise"
+  },
+  {
+    "id": "IL",
+    "name": "Illinois",
+    "val": "17",
+    "majority": "blue",
+    "capital": "Springfield"
+  },
+  {
+    "id": "IN",
+    "name": "Indiana",
+    "val": "18",
+    "majority": "red",
+    "capital": "Indianapolis"
+  },
+  {
+    "id": "IA",
+    "name": "Iowa",
+    "val": "19",
+    "majority": "red",
+    "capital": "Des Moines"
+  },
+  {
+    "id": "KS",
+    "name": "Kansas",
+    "val": "20",
+    "majority": "red",
+    "capital": "Topeka"
+  },
+  {
+    "id": "KY",
+    "name": "Kentucky",
+    "val": "21",
+    "majority": "red",
+    "capital": "Frankfort"
+  },
+  {
+    "id": "LA",
+    "name": "Louisiana",
+    "val": "22",
+    "majority": "red",
+    "capital": "Baton Rouge"
+  },
+  {
+    "id": "ME",
+    "name": "Maine",
+    "val": "23",
+    "majority": "red",
+    "capital": "Augusta"
+  },
+  {
+    "id": "MD",
+    "name": "Maryland",
+    "val": "24",
+    "majority": "red",
+    "capital": "Annapolis"
+  },
+  {
+    "id": "MA",
+    "name": "Massachusetts",
+    "val": "25",
+    "majority": "blue",
+    "capital": "Boston"
+  },
+  {
+    "id": "MI",
+    "name": "Michigan",
+    "val": "26",
+    "majority": "blue",
+    "capital": "Lansing"
+  },
+  {
+    "id": "MN",
+    "name": "Minnesota",
+    "val": "27",
+    "majority": "blue",
+    "capital": "Saint Paul"
+  },
+  {
+    "id": "MS",
+    "name": "Mississippi",
+    "val": "28",
+    "majority": "red",
+    "capital": "Jackson"
+  },
+  {
+    "id": "MO",
+    "name": "Missouri",
+    "val": "29",
+    "majority": "red",
+    "capital": "Jefferson City"
+  },
+  {
+    "id": "MT",
+    "name": "Montana",
+    "val": "30",
+    "majority": "red",
+    "capital": "Helena"
+  },
+  {
+    "id": "NE",
+    "name": "Nebraska",
+    "val": "31",
+    "majority": "red",
+    "capital": "Lincoln"
+  },
+  {
+    "id": "NV",
+    "name": "Nevada",
+    "val": "32",
+    "majority": "blue",
+    "capital": "Carson City"
+  },
+  {
+    "id": "NH",
+    "name": "New Hampshire",
+    "val": "33",
+    "majority": "blue",
+    "capital": "Concord"
+  },
+  {
+    "id": "NJ",
+    "name": "New Jersey",
+    "val": "34",
+    "majority": "blue",
+    "capital": "Trenton"
+  },
+  {
+    "id": "NM",
+    "name": "New Mexico",
+    "val": "35",
+    "majority": "blue",
+    "capital": "Santa Fe"
+  },
+  {
+    "id": "NY",
+    "name": "New York",
+    "val": "36",
+    "majority": "blue",
+    "capital": "Albany"
+  },
+  {
+    "id": "NC",
+    "name": "North Carolina",
+    "val": "37",
+    "majority": "red",
+    "capital": "Raleigh"
+  },
+  {
+    "id": "ND",
+    "name": "North Dakota",
+    "val": "38",
+    "majority": "red",
+    "capital": "Bismarck"
+  },
+  {
+    "id": "OH",
+    "name": "Ohio",
+    "val": "39",
+    "majority": "blue",
+    "capital": "Columbus"
+  },
+  {
+    "id": "OK",
+    "name": "Oklahoma",
+    "val": "40",
+    "majority": "red",
+    "capital": "Oklahoma City"
+  },
+  {
+    "id": "OR",
+    "name": "Oregon",
+    "val": "41",
+    "majority": "blue",
+    "capital": "Salem"
+  },
+  {
+    "id": "PA",
+    "name": "Pennsylvania",
+    "val": "42",
+    "majority": "blue",
+    "capital": "Harrisburg"
+  },
+  {
+    "id": "RI",
+    "name": "Rhode Island",
+    "val": "44",
+    "majority": "blue",
+    "capital": "Providence"
+  },
+  {
+    "id": "SC",
+    "name": "South Carolina",
+    "val": "45",
+    "majority": "red",
+    "capital": "Columbia"
+  },
+  {
+    "id": "SD",
+    "name": "South Dakota",
+    "val": "46",
+    "majority": "red",
+    "capital": "Pierre"
+  },
+  {
+    "id": "TN",
+    "name": "Tennessee",
+    "val": "47",
+    "majority": "red",
+    "capital": "Nashville"
+  },
+  {
+    "id": "TX",
+    "name": "Texas",
+    "val": "48",
+    "majority": "red",
+    "capital": "Austin"
+  },
+  {
+    "id": "UT",
+    "name": "Utah",
+    "val": "49",
+    "majority": "red",
+    "capital": "Salt Lake City"
+  },
+  {
+    "id": "VT",
+    "name": "Vermont",
+    "val": "50",
+    "majority": "blue",
+    "capital": "Montpelier"
+  },
+  {
+    "id": "VA",
+    "name": "Virginia",
+    "val": "51",
+    "majority": "blue",
+    "capital": "Richmond"
+  },
+  {
+    "id": "WA",
+    "name": "Washington",
+    "val": "53",
+    "majority": "blue",
+    "capital": "Olympia"
+  },
+  {
+    "id": "WV",
+    "name": "West Virginia",
+    "val": "54",
+    "majority": "red",
+    "capital": "Charleston"
+  },
+  {
+    "id": "WI",
+    "name": "Wisconsin",
+    "val": "55",
+    "majority": "blue",
+    "capital": "Madison"
+  },
+  {
+    "id": "WY",
+    "name": "Wyoming",
+    "val": "56",
+    "majority": "red",
+    "capital": "Cheyenne"
+  }
 ]
