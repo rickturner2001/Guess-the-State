@@ -1,6 +1,5 @@
 import type { NextPage } from "next";
 import Head from "next/head";
-import Image from "next/image";
 import { useEffect, useRef, useState } from "react";
 import { useGuesses, useGuessesUpdate } from "../components/context";
 import StatesTable from "../components/StatesTable";
@@ -127,8 +126,8 @@ const Home: NextPage = () => {
               <section className="md:w-[30rem] md:block mx-auto hidden p-4 border shadow-md">
                 <div className="flex flex-col space-y-6">
                   <div className="max-w-[12rem] mx-auto mb-12">
-                    <Image
-                      src={getFlagByID(latestGuess.id)?.src!}
+                    <img
+                      src={getFlagByID(latestGuess.id)?.src}
                       className="shadow-md"
                     />
                   </div>
@@ -168,8 +167,8 @@ const Home: NextPage = () => {
           <section className="max-w-md mx-auto md:hidden p-4 border shadow-md">
             <div className="flex flex-col space-y-6">
               <div className="max-w-[12rem] mx-auto mb-12">
-                <Image
-                  src={getFlagByID(latestGuess.id)?.src!}
+                <img
+                  src={getFlagByID(latestGuess.id)?.src}
                   className="shadow-md"
                 />
               </div>
